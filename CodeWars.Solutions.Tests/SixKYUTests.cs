@@ -15,6 +15,16 @@ namespace CodeWars.Solutions.Tests
             Assert.AreEqual(false, ChessFunChessBoardColor.ChessBoardCellColor("A1", "A2"));
         }
 
+        [Test]
+        public void SmallestPermutation_WhenCalled_ProducesCorrectResult()
+        {
+                Assert.AreEqual(-20, SmallestPermutation.MinPermutation(-20));
+                Assert.AreEqual(-23, SmallestPermutation.MinPermutation(-32));
+                Assert.AreEqual(0, SmallestPermutation.MinPermutation(0));
+                Assert.AreEqual(10, SmallestPermutation.MinPermutation(10));
+                Assert.AreEqual(23499, SmallestPermutation.MinPermutation(29394));
+        }
+
         [Test] 
         public void PrizeDraw_WhenCalled_ProducesCorrectResult() 
         {
