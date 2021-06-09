@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 
-namespace CodeWars.Solutions._6KYU.In_Progress
+namespace CodeWars.Solutions._6KYU
 {
     public static class WhichAreIn
     {

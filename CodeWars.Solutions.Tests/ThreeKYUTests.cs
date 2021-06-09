@@ -8,7 +8,7 @@ namespace CodeWars.Solutions.Tests
     public class ThreeKYUTests
     {
         [Test]
-        public void LastDigitOfHugeNumber_WhenCalled_ProducesCorrectOutput()
+        public void LastDigitOfHugeNumber_WhenCalled_ProducesCorrectResult()
         {
             Random rnd = new Random();
             int rand1 = rnd.Next(0, 100);
@@ -41,6 +41,7 @@ namespace CodeWars.Solutions.Tests
             Assert.AreEqual(LastDigitOfHugeNumber.LastDigit(test11), 6);
             Assert.AreEqual(LastDigitOfHugeNumber.LastDigit(test12), 6);
         }
+
 
     }
 }

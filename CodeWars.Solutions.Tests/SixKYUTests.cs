@@ -1,5 +1,6 @@
-﻿using CodeWars.Solutions._6KYU.In_Progress;
+﻿using CodeWars.Solutions._6KYU;
 using NUnit.Framework;
+using static CodeWars.Solutions._6KYU.TankTruckSolution;
 
 namespace CodeWars.Solutions.Tests
 {
@@ -38,6 +39,22 @@ namespace CodeWars.Solutions.Tests
             string[] a2 = new string[] { "lively", "alive", "harp", "sharp", "armstrong" };
             string[] r = new string[] { "arp", "live", "strong" };
             Assert.AreEqual(r, WhichAreIn.inArray(a1, a2));
+        }
+
+        [Test]
+        public void TankTruck_WhenCalled_ProducesCorrectOutput()
+        {
+            Assert.AreEqual(2940, VolTank.TankVol(5, 7, 3848));
+            Assert.AreEqual(907, VolTank.TankVol(2, 7, 3848));
+        }
+
+        [Test]
+        public void ChessFunBishopAndPawn_WhenCalled_ProducesCorrectOutput()
+        {
+            Assert.AreEqual(true, ChessFunBishopAndPawn.BishopAndPawn("a1", "c3"));
+            Assert.AreEqual(false, ChessFunBishopAndPawn.BishopAndPawn("h1", "h3"));
+            Assert.AreEqual(true, ChessFunBishopAndPawn.BishopAndPawn("a5", "c3"));
+            Assert.AreEqual(false, ChessFunBishopAndPawn.BishopAndPawn("g1", "f3"));
         }
 
     }

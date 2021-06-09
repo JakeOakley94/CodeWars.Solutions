@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace CodeWars.Solutions._6KYU.In_Progress
+namespace CodeWars.Solutions._6KYU
 {
     public static class PrizeDraw
     {
