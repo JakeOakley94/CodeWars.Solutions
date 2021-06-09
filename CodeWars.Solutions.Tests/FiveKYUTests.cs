@@ -15,5 +15,11 @@ namespace CodeWars.Solutions.Tests
             var result = expected.SetEquals(outputSet);
             Assert.IsTrue(result);
         }
+
+        [Test]
+        public void ROT13_WhenCalled_ProducesCorrectResult()
+        {
+            Assert.AreEqual("ROT13 example.", ROT13.Rot13("EBG13 rknzcyr."));
+        }
     }
 }
