@@ -8,6 +8,29 @@ namespace CodeWars.Solutions.Tests
     public class SixKYUTests
     {
         [Test]
+        public void BuyingACar_WhenCalled_ProducesCorrectResult()
+        {
+            int[] test1 = new int[] { 6, 766 };
+            int[] test2 = new int[] { 0, 4000 };
+            Assert.AreEqual(test1, BuyingACar.nbMonths(2000, 8000, 1000, 1.5));    
+            Assert.AreEqual(test2, BuyingACar.nbMonths(12000, 8000, 1000, 1.5));
+        }
+
+        [Test]
+        public void SortTheOdd_WhenCalled_ProducesCorrectResult()
+        {
+            Assert.AreEqual(new int[] { 1, 3, 2, 8, 5, 4 }, SortTheOdd.SortArray(new int[] { 5, 3, 2, 8, 1, 4 }));
+            Assert.AreEqual(new int[] { 1, 3, 5, 8, 0 }, SortTheOdd.SortArray(new int[] { 5, 3, 1, 8, 0 }));
+            Assert.AreEqual(new int[] { }, SortTheOdd.SortArray(new int[] { }));
+        }
+
+        [Test]
+        public void MultiplesOf3Or5_WhenCalled_ProducesCorrectResult()
+        {
+            Assert.AreEqual(23, MultiplesOf3Or5.Solution(10));
+        }
+
+        [Test]
         public void ChessFunChessBoardColor_WhenCalled_ProducesCorrectResult()
         {
             Assert.AreEqual(true, ChessFunChessBoardColor.ChessBoardCellColor("A1", "C3"));

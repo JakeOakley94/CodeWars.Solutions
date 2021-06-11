@@ -20,6 +20,7 @@ namespace CodeWars.Solutions.Tests
         public void ROT13_WhenCalled_ProducesCorrectResult()
         {
             Assert.AreEqual("ROT13 example.", ROT13.Rot13("EBG13 rknzcyr."));
+            var punchline = ROT13.Rot13("Va gur ryringbef, gur rkgebireg ybbxf ng gur BGURE thl'f fubrf.");
         }
     }
 }
